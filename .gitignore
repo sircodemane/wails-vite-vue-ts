@@ -10,8 +10,8 @@
 # Misc
 .DS_Store
 node_modules/
-/dist/
-/dist-ssr/
+dist/
+dist-ssr/
 
 # Local files
 *.local
@@ -23,6 +23,7 @@ yarn-error.log*
 
 # Binaries for programs and plugins
 *.exe
+*.exe.manifest
 *.exe~
 *.dll
 *.so

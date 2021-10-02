@@ -6,14 +6,12 @@ Congratulations on generating your template!
 
 The next steps to complete the template are:
 
-1. It is really important to ensure `helpurl` is valid as this is where users of the template will be directed for help.
-2. Update `README.md`.
 
 ## Testing your template
 
 You can test your template by running this command:
 
-`wails init -name test -t F:\go\src\wails\wails-vite-vue-ts`
+`wails init -n test -t F:/go/src/wails/templates/wails-vite-vue-ts`
 
 ### Checklist
 
