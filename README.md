@@ -6,6 +6,10 @@ This is a Wails template project with Vue 3 and TypeScript, using Vite for
 asset bundling. It comes with the bare minimum, and can be extended by following
 the guides in this README. 
 
+If you would like a more feature packed version that includes all features
+documented below already added, please check out my
+[feature packed Vite + Vue3 TypeScript template](https://github.com/codydbentley/wails-vite-vue-the-works)
+
 ## Live Development
 
 To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
@@ -181,7 +185,6 @@ Usage: `src/App.vue`
 
 To build this project in debug mode, use `wails build`. For production, use `wails build -production`.
 To generate a platform native package, add the `-package` flag.
-
 
 ## Known Issues
 
