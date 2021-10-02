@@ -9,7 +9,7 @@ the guides in this README.
 ## Live Development
 
 To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
-directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Navigate to this
+directory and run `npm run dev`. Navigate to http://localhost:34115
 in your browser to connect to your application.
 
 Note: Typechecking is disabled. If you want to do type checking, use `npm run type-check`
@@ -41,21 +41,23 @@ styling like this:
 
 Installation:
 ```shell
-$ npm install --save-dev eslint prettier eslint-plugin-vue eslint-config-prettier
-$ touch .eslintrc.js && touch .prettierrc
+$ npm install --save-dev eslint prettier eslint-plugin-vue eslint-config-prettier @vue/eslint-config-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+$ touch .eslintrc && touch .prettierrc
 ```
 
-Usage: `eslintrc.js`
-```js
-module.exports = {
-    extends: [
-        'plugin:vue/vue3-essential',
-        'prettier',
-    ],
-    rules: {
-        // override/add rules settings here, such as:
-        'vue/no-unused-vars': 'error',
-    },
+Usage: `eslintrc`
+```json
+{
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "eslint:recommended",
+    "prettier",
+    "@vue/typescript/recommended"
+  ],
+    "rules": {
+    // override/add rules settings here, such as:
+    // "vue/no-unused-vars": "error"
+  }
 }
 ```
 
@@ -183,6 +185,6 @@ To generate a platform native package, add the `-package` flag.
 
 ## Known Issues
 
-- When making changes to the frontend, the webview window will often fail. This appears to be a bug with Wails. Use `https://localhost:34115` in your browser for development
+- When making changes to the frontend, the browser reload will often happen too fast, causes issues. A refresh will fix the page.
 - Typechecking is turned off due to Wails depending on the frontend to build before it will compile the backend and generate bindings.
 - If you find any other problems, please create an issue.
