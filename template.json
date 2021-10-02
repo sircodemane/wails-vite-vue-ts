@@ -1,0 +1,7 @@
+{
+  "name": "Vue3 TypeScript + Vite",
+  "shortname": "wails-vite-vue-ts",
+  "author": "Cody Bentley <cody.bentley.la@gmail.com",
+  "description": "Vue3 template with TS enabled, using Vite for asset bundling",
+  "helpurl": "https://github.com/codydbentley/wails-vite-vue-ts"
+}
