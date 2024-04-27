@@ -1,5 +1,9 @@
 # Wails + Vue 3 Typescript
 
+## ARCHIVED NOTICE
+
+This Wails template has been archived and is no longer maintained. I intend to develop a new template in the future.
+
 ## About
 
 This is a Wails template project with Vue 3 and TypeScript, using Vite for
